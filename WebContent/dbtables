@@ -1,0 +1,26 @@
+   1. UsersTable
+   2.Users
+   3.PostTable
+   4.CommentsTable
+create table UsersTable(
+					firstname varchar2(20),
+					lastname varchar2(20),
+					mobile varchar2(20),
+					email varchar2(20),
+					username varchar2(20),
+					password varchar2(20)
+				);
+create table PostTable(
+					username varchar2(20),
+					posttitle varchar2(20),
+					postbody varchar2(20),
+					posttime varchar2(20)
+				);
+create table Users(
+					username varchar2(20)
+				);
+create table CommentsTable(
+					post_id number,
+					comments varchar2(20),
+					username varchar2(20)
+				);
