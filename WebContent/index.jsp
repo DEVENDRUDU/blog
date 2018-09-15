@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>index page</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>

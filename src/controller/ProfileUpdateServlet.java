@@ -17,7 +17,7 @@ public class ProfileUpdateServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String firstname=request.getParameter("firstname");
@@ -34,7 +34,7 @@ public class ProfileUpdateServlet extends HttpServlet {
 		m.setEmail(email);
 		if(session.getAttribute("username")==null)
 		{
-			response.sendRedirect("/newsite/login.jsp");
+			response.sendRedirect("/blogsite/login.jsp");
 		}
 		String sql="update UsersTable set firstname=?,lastname=?,mobile=?,email=? where username=?";
 		int i=DbClass.updateUser(m,sql);

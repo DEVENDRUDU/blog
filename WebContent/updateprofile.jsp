@@ -12,7 +12,7 @@
 	 		<%  response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
   	if(session.getAttribute("username")==null)
 	 	{
-	 		response.sendRedirect("/newsite/login.jsp");
+	 		response.sendRedirect("/blogsite/login.jsp");
 	 	}
 	 %> 
 	<div class="container">
@@ -47,5 +47,6 @@
 			<tr><td></td><td> <input type="submit" value="update"></td></tr>
 			</table></center>
 	</form> --%>
+	<% session.setAttribute("msg", " "); %>
 </body>
 </html>

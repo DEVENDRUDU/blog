@@ -1,4 +1,4 @@
-s<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 	 <%@ page import="models.*" %>
 	 <%@ page import="controller.*" %>
@@ -48,6 +48,6 @@ s	<%! int postid; %>
 	</div>
 </div>
 </div>
-	
+	<% session.setAttribute("msg"," "); %>
 </body>
 </html>

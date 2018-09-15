@@ -16,7 +16,7 @@
  <%-- 	<%  response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
   	if(session.getAttribute("username")==null)
 	 	{
-	 		response.sendRedirect("newsite/login.jsp");
+	 		response.sendRedirect("blogsite/login.jsp");
 	 	}
 	 %> 
  --%>	 welcome &nbsp;&nbsp;<%= session.getAttribute("username") %>
@@ -72,5 +72,6 @@
   </table>
 </div>	
 </div> 
+<% session.setAttribute("msg", " "); %>
 </body>
 </html>

@@ -70,5 +70,6 @@
 		</div>
 	</div>
 </div>
+<% session.setAttribute("msg", " "); %>
 </body>
 </html>
